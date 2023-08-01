@@ -1,0 +1,66 @@
+html{
+    font-size: 62.5%;
+}
+
+/* BODY */
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 135px;
+    font-size: 1.6rem;
+    background-color: rgb(247 247 247);
+    /* background-color: rgb(163, 37, 37); */
+}
+
+.topo{
+    background-color: white;
+    padding-top: 20px;
+}
+
+/* MAIN */
+main{
+    background-color: white;
+    margin: 0 240px;
+    padding-top: 20px;
+}
+
+.manchete-superior{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px 40px;
+}
+
+.manchete-superior h1{
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.manchete-superior p{
+    padding-bottom: 10px;
+}
+
+.manchetes-inferiores{
+    display: flex;
+    margin: 0 24px;
+    padding-bottom: 30px;
+}
+
+.manchetes-inferiores .fonte{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.manchetes-inferiores .fonte h2{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* FOOTER */
+
+.copyright{
+    text-align: center;
+    /* margin: 20px 300px; */
+    padding: 20px;
+}
