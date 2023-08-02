@@ -13,11 +13,6 @@ body{
     /* background-color: rgb(163, 37, 37); */
 }
 
-.topo{
-    background-color: white;
-    padding-top: 20px;
-}
-
 /* MAIN */
 main{
     background-color: white;
@@ -25,26 +20,40 @@ main{
     padding-top: 20px;
 }
 
+.conteudo{
+    padding: 20px;
+}
+
 .manchete-superior{
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 20px 40px;
+    padding: 20px 10px;
 }
 
-.manchete-superior h1{
+.manchete-superior .titulo-principal{
     padding-bottom: 10px;
     font-weight: 700;
+    font-size: 24px;
 }
 
-.manchete-superior p{
+.manchete-superior .titulo-auxiliar{
     padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+} 
+
+.manchete-superior .fonte-manchete, .manchetes-inferiores .fonte-manchete{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    color: rgb(130, 134, 138);
+    /* padding: 0; */
 }
 
 .manchetes-inferiores{
     display: flex;
-    margin: 0 24px;
-    padding-bottom: 30px;
+    padding: 0 10px;
 }
 
 .manchetes-inferiores .fonte{
@@ -52,15 +61,30 @@ main{
     flex-direction: column;
     text-align: left;
 }
-.manchetes-inferiores .fonte h2{
+.manchetes-inferiores .fonte .titulo-principal{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
+    padding: 10px 0;
+    line-height: 1.0;
+}
+.manchetes-inferiores .img-manchete {
+    width: auto; 
+    height: 191px;
+}
+
+.manchete-inferior-esquerda{
+    /* margin-left: 10px; */
+    padding-right: 20px;
 }
 
 /* FOOTER */
 
 .copyright{
     text-align: center;
-    /* margin: 20px 300px; */
     padding: 20px;
+}
+.copyright p, a{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(88, 86, 86);
 }
