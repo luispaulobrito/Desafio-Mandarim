@@ -6,18 +6,18 @@ html{
 body{
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: 0 135px;
     font-size: 1.6rem;
     background-color: rgb(247 247 247);
-    /* background-color: rgb(163, 37, 37); */
 }
 
 /* MAIN */
 main{
     background-color: white;
-    margin: 0 240px;
     padding-top: 20px;
+    width: 601px;
 }
 
 .conteudo{
@@ -73,12 +73,10 @@ main{
 }
 
 .manchete-inferior-esquerda{
-    /* margin-left: 10px; */
     padding-right: 20px;
 }
 
 /* FOOTER */
-
 .copyright{
     text-align: center;
     padding: 20px;
@@ -87,4 +85,40 @@ main{
     font-size: 12px;
     font-weight: 600;
     color: rgb(88, 86, 86);
+}
+
+@media (max-width: 768px){
+    main{
+        width: 425px;
+    }
+    .manchetes-inferiores {
+        flex-direction: column;
+      }
+    
+      .manchete-inferior-esquerda,
+      .manchete-inferior-direita {
+        padding-right: 0;
+      }
+    
+      .manchete-inferior-direita {
+        padding-top: 20px;
+      }
+    
+      .manchetes-inferiores .fonte,
+      .manchetes-inferiores .fonte div {
+        padding: 0;
+      }
+
+    .copyright{
+        padding: 10px 0;
+    }
+    .copyright p, a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 425px){
+    main{
+        width: 320px;
+    }
 }
